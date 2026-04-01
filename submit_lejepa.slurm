@@ -1,4 +1,5 @@
 #!/bin/bash
+#SBATCH -A als
 #SBATCH -J lejepa_train
 #SBATCH -C gpu
 #SBATCH -q regular
