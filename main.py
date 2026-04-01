@@ -21,8 +21,18 @@ def main(cfg: DictConfig):
     # Initialize DDP
     local_rank = int(os.environ.get("LOCAL_RANK", 0))
     global_rank = int(os.environ.get("RANK", 0))
+    world_size = int(os.environ.get("WORLD_SIZE", 1))
+    
+    num_gpus = torch.cuda.device_count()
+    print(f"[Rank {global_rank}/{world_size} - Local {local_rank}] Available GPUs: {num_gpus}")
+
     if torch.cuda.is_available():
-        torch.cuda.set_device(local_rank)
+        if local_rank < num_gpus:
+            torch.cuda.set_device(local_rank)
+        else:
+            print(f"Warning: local_rank {local_rank} >= num_gpus {num_gpus}. Defaulting to 0.")
+            torch.cuda.set_device(0)
+    
     if not dist.is_initialized():
         dist.init_process_group(backend="nccl")
 
