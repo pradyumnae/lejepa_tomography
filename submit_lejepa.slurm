@@ -11,12 +11,11 @@
 #SBATCH --exclusive
 
 module load gpu
-module load nccl-plugin
 export IMAGE="nersc/pytorch:25.02.01"
 
-# Using the same environment setup as your other projects
-export PYTHONUSERBASE=$PSCRATCH/microct_sr_2d_project/env
-export PYTHONPATH=$PYTHONUSERBASE/lib/python3.11/site-packages:$PYTHONPATH
+# Using the local environment installed for this project
+export PYTHONUSERBASE=$PSCRATCH/lejepa_tomography/env
+export PYTHONPATH=$PYTHONUSERBASE/lib/python3.12/site-packages:$PYTHONPATH
 
 export NCCL_DEBUG=INFO
 export NCCL_NET_GDR_LEVEL=PHB
