@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data
+data/
+*.h5
+*.hdf5
+*.nii
+*.nii.gz
+*.tif
+*.tiff
+*.png
+*.jpg
+
+# Logs and Checkpoints
+logs/
+checkpoints/
+wandb/
+.hydra/
+outputs/
+multirun/
