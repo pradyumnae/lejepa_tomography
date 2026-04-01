@@ -24,14 +24,13 @@ def main(cfg: DictConfig):
     world_size = int(os.environ.get("WORLD_SIZE", 1))
     
     num_gpus = torch.cuda.device_count()
-    print(f"[Rank {global_rank}/{world_size} - Local {local_rank}] Available GPUs: {num_gpus}")
+    if global_rank == 0:
+        print(f"World Size: {world_size}")
+        print(f"GPUs per task: {num_gpus}")
 
     if torch.cuda.is_available():
-        if local_rank < num_gpus:
-            torch.cuda.set_device(local_rank)
-        else:
-            print(f"Warning: local_rank {local_rank} >= num_gpus {num_gpus}. Defaulting to 0.")
-            torch.cuda.set_device(0)
+        # Each task typically sees only 1 GPU on Perlmutter when --gpus-per-task=1
+        torch.cuda.set_device(0)
     
     if not dist.is_initialized():
         dist.init_process_group(backend="nccl")
@@ -44,19 +43,19 @@ def main(cfg: DictConfig):
 
     train_ds = TomographyH5Dataset(
         h5_path="/global/homes/e/elavarpa/pscratch/microct_sr_2d_project/data/processed/serpentinite_train.h5", 
-        dataset_key=cfg.dataset_key,
+        dataset_key=cfg.dataset_key, # If None, it will discover all scans
         V=cfg.V, vmin=cfg.vmin, vmax=cfg.vmax, is_train=True
     )
     
     sampler = DistributedSampler(train_ds, shuffle=True)
     train = DataLoader(train_ds, batch_size=cfg.bs, sampler=sampler, drop_last=True, num_workers=cfg.num_workers)
 
-    net = ViTEncoder(proj_dim=cfg.proj_dim, img_size=cfg.img_size, in_chans=1).to(local_rank)
-    net = DDP(net, device_ids=[local_rank], find_unused_parameters=True)
+    net = ViTEncoder(proj_dim=cfg.proj_dim, img_size=cfg.img_size, in_chans=1).to("cuda")
+    net = DDP(net, device_ids=[0], find_unused_parameters=True)
     
-    probe = nn.Sequential(nn.LayerNorm(512), nn.Linear(512, 10)).to(local_rank)
-    probe = DDP(probe, device_ids=[local_rank])
-    sigreg = SIGReg().to(local_rank)
+    probe = nn.Sequential(nn.LayerNorm(512), nn.Linear(512, 10)).to("cuda")
+    probe = DDP(probe, device_ids=[0])
+    sigreg = SIGReg().to("cuda")
 
     g1 = {"params": net.parameters(), "lr": cfg.lr, "weight_decay": 5e-2}
     g2 = {"params": probe.parameters(), "lr": 1e-3, "weight_decay": 1e-7}
@@ -71,7 +70,7 @@ def main(cfg: DictConfig):
 
     # Training Loop
     if global_rank == 0:
-        print("Starting distributed training...")
+        print(f"Starting distributed training on {len(train_ds)} slices...")
         
     for epoch in range(cfg.epochs):
         sampler.set_epoch(epoch)
@@ -81,8 +80,8 @@ def main(cfg: DictConfig):
         pbar = tqdm.tqdm(train, total=len(train)) if global_rank == 0 else train
         
         for vs, y in pbar:
-            vs = vs.to(local_rank, non_blocking=True)
-            y = y.to(local_rank, non_blocking=True)
+            vs = vs.to("cuda", non_blocking=True)
+            y = y.to("cuda", non_blocking=True)
             
             with autocast("cuda", dtype=torch.bfloat16):
                 emb, proj = net(vs)
@@ -114,13 +113,12 @@ if __name__ == "__main__":
     from omegaconf import OmegaConf
     default_cfg = OmegaConf.create({
         "debug": True,
-        "dataset_key": "data",
+        "dataset_key": None, # Discover all scans
         "V": 2, "vmin": 0.0, "vmax": 65535.0,
-        "bs": 16, # Increased batch size for 4 gpus
+        "bs": 16, # Per GPU batch size
         "num_workers": 4,
         "proj_dim": 128, "img_size": 128,
-        "lr": 1e-4, "epochs": 5, "lamb": 0.5
+        "lr": 1e-4, "epochs": 20, "lamb": 0.5
     })
     
-    # Normally hydra handles sys args, passing defaults directly here acts as dry-run fallback if no yaml provided
     main(default_cfg)

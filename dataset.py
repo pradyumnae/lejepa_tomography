@@ -6,48 +6,73 @@ from augmentations import get_lejepa_transforms
 
 class TomographyH5Dataset(Dataset):
     """
-    A PyTorch Dataset for reading 32-bit tomography data from HDF5.
-    Returns V views, where typcally elements are transformed differently 
-    (e.g., target vs context views for LeJEPA).
+    Treats multiple HDF5 datasets (scans) as a single large continuous volume.
+    Automatically discovers scans if dataset_key is None.
     """
-    def __init__(self, h5_path, dataset_key='data', V=2, 
-                 vmin=0.0, vmax=1.0, is_train=True):
+    def __init__(self, h5_path, dataset_key=None, V=2, 
+                 vmin=0.0, vmax=65535.0, is_train=True):
         self.h5_path = h5_path
-        self.dataset_key = dataset_key
         self.V = V
         self.is_train = is_train
+        self.vmin = vmin
+        self.vmax = vmax
         
-        # Open quickly to check length (assuming [N, H, W] or [H, W, D])
         with h5py.File(self.h5_path, 'r') as f:
-            self.length = f[self.dataset_key].shape[0]
+            if dataset_key is None:
+                self.dataset_names = sorted(list(f.keys()))
+            else:
+                self.dataset_names = [dataset_key] if isinstance(dataset_key, str) else dataset_key
 
-        # For LeJEPA, typically V contexts. If we want a specific target transform,
-        # we can define diverse pipelines here.
-        # Here we just use context view transforms for all V views for simplicity,
-        # or we could make the first one the target.
+            self.scan_infos = []
+            self.total_len = 0
+            
+            for name in self.dataset_names:
+                dset = f[name]
+                # Assuming shape [D, H, W]
+                d, h, w = dset.shape
+                self.scan_infos.append({
+                    'name': name,
+                    'start_idx': self.total_len,
+                    'end_idx': self.total_len + d,
+                    'shape': (d, h, w)
+                })
+                self.total_len += d
+
         self.transform_target = get_lejepa_transforms(vmin, vmax, is_target=True)
         self.transform_context = get_lejepa_transforms(vmin, vmax, is_target=False)
+        self.h5_file = None
 
     def __len__(self):
-        return self.length
+        return self.total_len
 
-    def __getitem__(self, i):
-        # Open per worker (HDF5 doesn't like shared file handles across workers)
-        with h5py.File(self.h5_path, 'r') as f:
-            # Read single slice as basic example
-            slice_data = f[self.dataset_key][i]
+    def __getitem__(self, idx):
+        if self.h5_file is None:
+            self.h5_file = h5py.File(self.h5_path, 'r')
+
+        # Find which scan this index belongs to
+        target_info = None
+        for info in self.scan_infos:
+            if info['start_idx'] <= idx < info['end_idx']:
+                target_info = info
+                break
+        
+        if target_info is None:
+            raise IndexError("Global index out of range")
+
+        local_idx = idx - target_info['start_idx']
+        
+        # Read the slice
+        # Some scans might be stored differently, but we assume [D, H, W]
+        slice_data = self.h5_file[target_info['name']][local_idx]
             
         # Convert to float32 tensor [1, H, W]
         img_tensor = torch.from_numpy(slice_data.astype(np.float32)).unsqueeze(0)
         
         # Apply LeJEPA multi-view augmentations
         if self.is_train:
-            # e.g., view 0 is target, everything else is context
             views = [self.transform_target(img_tensor)]
             for _ in range(1, self.V):
                 views.append(self.transform_context(img_tensor))
-            return torch.stack(views), 0 # Dummy label for unsupervised
+            return torch.stack(views), 0 
         else:
-            # Validation just center crops or standardizes
             return self.transform_target(img_tensor), 0
-
