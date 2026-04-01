@@ -25,7 +25,7 @@ srun shifter --image=$IMAGE bash -c "
     export MASTER_ADDR=\$(hostname)
     export MASTER_PORT=29500
     export RANK=\$SLURM_PROCID
-    export LOCAL_RANK=\$SLURM_LOCALID
+    export LOCAL_RANK=0
     export WORLD_SIZE=\$SLURM_NTASKS
     python main.py
 "
