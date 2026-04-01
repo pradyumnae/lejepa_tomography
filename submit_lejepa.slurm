@@ -10,13 +10,19 @@
 #SBATCH --gpus-per-task=1
 #SBATCH --exclusive
 
-module load pytorch/2.3.1-cu121
-export LOGLEVEL=INFO
+module load gpu
+module load nccl-plugin
+export IMAGE="nersc/pytorch:25.02.01"
 
-# Number of GPUs per node (Perlmutter has 4 per node)
-export GPUS_PER_NODE=4
+# Using the same environment setup as your other projects
+export PYTHONUSERBASE=$PSCRATCH/microct_sr_2d_project/env
+export PYTHONPATH=$PYTHONUSERBASE/lib/python3.11/site-packages:$PYTHONPATH
 
-srun bash -c "
+export NCCL_DEBUG=INFO
+export NCCL_NET_GDR_LEVEL=PHB
+export OMP_NUM_THREADS=4
+
+srun shifter --image=$IMAGE bash -c "
     export MASTER_ADDR=\$(hostname)
     export MASTER_PORT=29500
     export RANK=\$SLURM_PROCID
