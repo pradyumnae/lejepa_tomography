@@ -5,18 +5,33 @@ import numpy as np
 
 class CustomIntensityWindowing(nn.Module):
     """
-    Clips 32-bit intensity values and normalizes them to [0, 1].
-    Given a min and max value typical for the physical 32-bit tomogram.
+    Dynamically clips intensity values to the 1st and 99th percentiles
+    and normalizes them to [0, 1]. Uses subset sampling for fast computation.
     """
-    def __init__(self, vmin, vmax):
+    def __init__(self, p_low=0.01, p_high=0.99):
         super().__init__()
-        self.vmin = vmin
-        self.vmax = vmax
+        self.p_low = p_low
+        self.p_high = p_high
 
     def forward(self, img):
         # img is expected to be a float32 tensor
-        img_clipped = torch.clamp(img, self.vmin, self.vmax)
-        img_norm = (img_clipped - self.vmin) / (self.vmax - self.vmin)
+        flat = img.view(-1)
+        
+        # Subsample for faster quantile computation on large 2560x2560 slices
+        if flat.numel() > 100000:
+            indices = torch.randint(0, flat.numel(), (100000,))
+            sample = flat[indices]
+            q_low = torch.quantile(sample, self.p_low)
+            q_high = torch.quantile(sample, self.p_high)
+        else:
+            q_low = torch.quantile(flat, self.p_low)
+            q_high = torch.quantile(flat, self.p_high)
+            
+        if q_high == q_low:
+            return torch.zeros_like(img)
+            
+        img_clipped = torch.clamp(img, q_low, q_high)
+        img_norm = (img_clipped - q_low) / (q_high - q_low)
         return img_norm
 
 class RandomGaussianNoise(nn.Module):
@@ -67,16 +82,16 @@ def get_lejepa_transforms(vmin=0.0, vmax=65535.0, is_target=False):
     Returns the transformation pipeline for the LeJEPA context or target views
     for 32-bit grayscale tomography data.
     """
-    # Adjust vmin/vmax defaults depending on actual 32-bit dataset values
+    # Using dynamic 1/99 percentile clipping
     base_transforms = [
-        CustomIntensityWindowing(vmin=vmin, vmax=vmax),
+        CustomIntensityWindowing(p_low=0.01, p_high=0.99),
         # Assuming input is already float tensor [1, H, W]
     ]
     
     if not is_target:
         # Context view gets heavier augmentations
         aug_transforms = [
-            v2.RandomResizedCrop(128, scale=(0.2, 1.0), antialias=True),
+            v2.Resize((512, 512), antialias=True),
             v2.RandomHorizontalFlip(p=0.5),
             v2.RandomVerticalFlip(p=0.5),
             v2.RandomApply([RandomGaussianNoise()], p=0.5),
@@ -85,7 +100,7 @@ def get_lejepa_transforms(vmin=0.0, vmax=65535.0, is_target=False):
     else:
         # Target view gets lighter augmentations (or just cropped)
         aug_transforms = [
-            v2.RandomResizedCrop(128, scale=(0.5, 1.0), antialias=True),
+            v2.Resize((512, 512), antialias=True),
             v2.RandomHorizontalFlip(p=0.5),
             v2.RandomVerticalFlip(p=0.5),
         ]

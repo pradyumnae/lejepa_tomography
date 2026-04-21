@@ -1,0 +1,30 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"nccl-plugin"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "nccl-plugin"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 12, in <module>
+Traceback (most recent call last):
+  File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 12, in <module>
+    import hydra
+    import hydra
+ModuleNotFoundError: No module named 'hydra'
+ModuleNotFoundError: No module named 'hydra'
+Traceback (most recent call last):
+  File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 12, in <module>
+    import hydra
+ModuleNotFoundError: No module named 'hydra'
+Traceback (most recent call last):
+  File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 12, in <module>
+    import hydra
+ModuleNotFoundError: No module named 'hydra'
+srun: error: nid001292: tasks 0-3: Exited with exit code 1
+srun: Terminating StepId=50829159.0

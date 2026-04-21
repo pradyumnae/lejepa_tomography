@@ -1,0 +1,434 @@
+nid002393:213885:213885 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid002393:213885:213885 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213885:213885 [0] NCCL INFO Bootstrap: Using hsn0:10.249.14.147<0>
+nid002393:213885:213885 [0] NCCL INFO cudaDriverVersion 13000
+nid002393:213885:213885 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid002393:213885:213885 [0] NCCL INFO Comm config Blocking set to 1
+nid002393:213885:213885 [0] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid002393:213885:213885 [0] NCCL INFO Failed to open libibverbs.so[.1]
+nid002393:213885:213885 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+nid002393:213885:213885 [0] NCCL INFO Failed to initialize NET plugin IB
+nid002393:213885:213885 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213885:213885 [0] NCCL INFO NET/Socket : Using [0]hsn0:10.249.14.147<0> [1]hsn0:chn:128.55.69.94<0> [2]hsn1:10.249.14.148<0> [3]hsn2:10.249.36.54<0> [4]hsn3:10.249.34.54<0>
+nid002393:213885:213885 [0] NCCL INFO Initialized NET plugin Socket
+nid002393:213885:213885 [0] NCCL INFO Assigned NET plugin Socket to comm
+nid002393:213885:213885 [0] NCCL INFO Using network Socket
+nid002393:213885:213885 [0] NCCL INFO ncclCommInitRankConfig comm 0xc4d5100 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId c1000 commId 0xbd1acb977dfd3dee - Init START
+nid002393:213885:213885 [0] NCCL INFO RAS client listening socket at ::1<28028>
+nid002393:213885:213885 [0] NCCL INFO Bootstrap timings total 0.018043 (create 0.000035, send 0.000120, recv 0.000245, ring 0.017204, delay 0.000003)
+nid002393:213885:213885 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 0-15,64-79. (GPU affinity = 0-15,64-79 ; CPU affinity = 0-15,64-79).
+nid002393:213885:213885 [0] NCCL INFO NVLS multicast support is not available on dev 0 (NVLS_NCHANNELS 0)
+nid002393:213885:213885 [0] NCCL INFO comm 0xc4d5100 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+nid002393:213885:213885 [0] NCCL INFO Channel 00/24 : 0 1 2 3
+nid002393:213885:213885 [0] NCCL INFO Channel 01/24 : 0 1 3 2
+nid002393:213885:213885 [0] NCCL INFO Channel 02/24 : 0 2 3 1
+nid002393:213885:213885 [0] NCCL INFO Channel 03/24 : 0 2 1 3
+nid002393:213885:213885 [0] NCCL INFO Channel 04/24 : 0 3 1 2
+nid002393:213885:213885 [0] NCCL INFO Channel 05/24 : 0 3 2 1
+nid002393:213885:213885 [0] NCCL INFO Channel 06/24 : 0 1 2 3
+nid002393:213885:213885 [0] NCCL INFO Channel 07/24 : 0 1 3 2
+nid002393:213885:213885 [0] NCCL INFO Channel 08/24 : 0 2 3 1
+nid002393:213885:213885 [0] NCCL INFO Channel 09/24 : 0 2 1 3
+nid002393:213885:213885 [0] NCCL INFO Channel 10/24 : 0 3 1 2
+nid002393:213885:213885 [0] NCCL INFO Channel 11/24 : 0 3 2 1
+nid002393:213885:213885 [0] NCCL INFO Channel 12/24 : 0 1 2 3
+nid002393:213885:213885 [0] NCCL INFO Channel 13/24 : 0 1 3 2
+nid002393:213885:213885 [0] NCCL INFO Channel 14/24 : 0 2 3 1
+nid002393:213885:213885 [0] NCCL INFO Channel 15/24 : 0 2 1 3
+nid002393:213885:213885 [0] NCCL INFO Channel 16/24 : 0 3 1 2
+nid002393:213885:213885 [0] NCCL INFO Channel 17/24 : 0 3 2 1
+nid002393:213885:213885 [0] NCCL INFO Channel 18/24 : 0 1 2 3
+nid002393:213885:213885 [0] NCCL INFO Channel 19/24 : 0 1 3 2
+nid002393:213885:213885 [0] NCCL INFO Channel 20/24 : 0 2 3 1
+nid002393:213885:213885 [0] NCCL INFO Channel 21/24 : 0 2 1 3
+nid002393:213885:213885 [0] NCCL INFO Channel 22/24 : 0 3 1 2
+nid002393:213885:213885 [0] NCCL INFO Channel 23/24 : 0 3 2 1
+nid002393:213885:213885 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] 1/-1/-1->0->-1 [3] 1/-1/-1->0->-1 [4] 2/-1/-1->0->-1 [5] 2/-1/-1->0->-1 [6] 2/-1/-1->0->-1 [7] 2/-1/-1->0->-1 [8] 3/-1/-1->0->1 [9] 3/-1/-1->0->1 [10] 3/-1/-1->0->1 [11] 3/-1/-1->0->1 [12] 1/-1/-1->0->-1 [13] 1/-1/-1->0->-1 [14] 1/-1/-1->0->-1 [15] 1/-1/-1->0->-1 [16] 2/-1/-1->0->-1 [17] 2/-1/-1->0->-1 [18] 2/-1/-1->0->-1 [19] 2/-1/-1->0->-1 [20] 3/-1/-1->0->1 [21] 3/-1/-1->0->1 [22] 3/-1/-1->0->1 [23] 3/-1/-1->0->1
+nid002393:213885:213885 [0] NCCL INFO P2P Chunksize set to 524288
+nid002393:213886:213886 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid002393:213886:213886 [0] NCCL INFO cudaDriverVersion 13000
+nid002393:213886:213886 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213886:213886 [0] NCCL INFO Bootstrap: Using hsn0:10.249.14.147<0>
+nid002393:213886:213886 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid002393:213886:213886 [0] NCCL INFO Comm config Blocking set to 1
+nid002393:213886:213886 [0] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid002393:213886:213886 [0] NCCL INFO Failed to open libibverbs.so[.1]
+nid002393:213886:213886 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+nid002393:213886:213886 [0] NCCL INFO Failed to initialize NET plugin IB
+nid002393:213886:213886 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213886:213886 [0] NCCL INFO NET/Socket : Using [0]hsn0:10.249.14.147<0> [1]hsn0:chn:128.55.69.94<0> [2]hsn1:10.249.14.148<0> [3]hsn2:10.249.36.54<0> [4]hsn3:10.249.34.54<0>
+nid002393:213886:213886 [0] NCCL INFO Initialized NET plugin Socket
+nid002393:213886:213886 [0] NCCL INFO Assigned NET plugin Socket to comm
+nid002393:213886:213886 [0] NCCL INFO Using network Socket
+nid002393:213886:213886 [0] NCCL INFO ncclCommInitRankConfig comm 0x10e49e40 rank 1 nranks 4 cudaDev 0 nvmlDev 0 busId 82000 commId 0xbd1acb977dfd3dee - Init START
+nid002393:213886:213886 [0] NCCL INFO RAS client listening socket at ::1<28028>
+nid002393:213886:213886 [0] NCCL INFO Bootstrap timings total 0.022483 (create 0.000044, send 0.000138, recv 0.021497, ring 0.000340, delay 0.000004)
+nid002393:213886:213886 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 16-31,80-95. (GPU affinity = 16-31,80-95 ; CPU affinity = 16-31,80-95).
+nid002393:213886:213886 [0] NCCL INFO NVLS multicast support is not available on dev 0 (NVLS_NCHANNELS 0)
+nid002393:213886:213886 [0] NCCL INFO comm 0x10e49e40 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+nid002393:213886:213886 [0] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 3/-1/-1->1->2 [5] 3/-1/-1->1->2 [6] 3/-1/-1->1->2 [7] 3/-1/-1->1->2 [8] 0/-1/-1->1->-1 [9] 0/-1/-1->1->-1 [10] 0/-1/-1->1->-1 [11] 0/-1/-1->1->-1 [12] 2/-1/-1->1->0 [13] 2/-1/-1->1->0 [14] 2/-1/-1->1->0 [15] 2/-1/-1->1->0 [16] 3/-1/-1->1->2 [17] 3/-1/-1->1->2 [18] 3/-1/-1->1->2 [19] 3/-1/-1->1->2 [20] 0/-1/-1->1->-1 [21] 0/-1/-1->1->-1 [22] 0/-1/-1->1->-1 [23] 0/-1/-1->1->-1
+nid002393:213886:213886 [0] NCCL INFO P2P Chunksize set to 524288
+nid002393:213886:213886 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid002393:213886:213886 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid002393:213886:214758 [0] NCCL INFO [Proxy Service] Device 0 CPU core 29
+nid002393:213886:214759 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 81
+nid002393:213886:213886 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid002393:213886:213886 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid002393:213886:213886 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid002393:213886:213886 [0] NCCL INFO ncclCommInitRankConfig comm 0x10e49e40 rank 1 nranks 4 cudaDev 0 nvmlDev 0 busId 82000 commId 0xbd1acb977dfd3dee - Init COMPLETE
+nid002393:213886:213886 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 4 total 0.25 (kernels 0.14, alloc 0.03, bootstrap 0.02, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.02, rest 0.01)
+nid002393:213886:213886 [0] NCCL INFO Channel 00/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 04/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 06/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 10/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 12/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid002393:213888:213888 [0] NCCL INFO cudaDriverVersion 13000
+nid002393:213888:213888 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213888:213888 [0] NCCL INFO Bootstrap: Using hsn0:10.249.14.147<0>
+nid002393:213888:213888 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid002393:213888:213888 [0] NCCL INFO Comm config Blocking set to 1
+nid002393:213888:213888 [0] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid002393:213888:213888 [0] NCCL INFO Failed to open libibverbs.so[.1]
+nid002393:213888:213888 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+nid002393:213888:213888 [0] NCCL INFO Failed to initialize NET plugin IB
+nid002393:213888:213888 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213888:213888 [0] NCCL INFO NET/Socket : Using [0]hsn0:10.249.14.147<0> [1]hsn0:chn:128.55.69.94<0> [2]hsn1:10.249.14.148<0> [3]hsn2:10.249.36.54<0> [4]hsn3:10.249.34.54<0>
+nid002393:213888:213888 [0] NCCL INFO Initialized NET plugin Socket
+nid002393:213888:213888 [0] NCCL INFO Assigned NET plugin Socket to comm
+nid002393:213888:213888 [0] NCCL INFO Using network Socket
+nid002393:213888:213888 [0] NCCL INFO ncclCommInitRankConfig comm 0x10e69e80 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId 41000 commId 0xbd1acb977dfd3dee - Init START
+nid002393:213888:213888 [0] NCCL INFO RAS client listening socket at ::1<28028>
+nid002393:213888:213888 [0] NCCL INFO Bootstrap timings total 0.001106 (create 0.000043, send 0.000144, recv 0.000238, ring 0.000272, delay 0.000003)
+nid002393:213888:213888 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 32-47,96-111. (GPU affinity = 32-47,96-111 ; CPU affinity = 32-47,96-111).
+nid002393:213888:213888 [0] NCCL INFO NVLS multicast support is not available on dev 0 (NVLS_NCHANNELS 0)
+nid002393:213888:213888 [0] NCCL INFO comm 0x10e69e80 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+nid002393:213888:213888 [0] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 1/-1/-1->2->0 [5] 1/-1/-1->2->0 [6] 1/-1/-1->2->0 [7] 1/-1/-1->2->0 [8] -1/-1/-1->2->3 [9] -1/-1/-1->2->3 [10] -1/-1/-1->2->3 [11] -1/-1/-1->2->3 [12] 3/-1/-1->2->1 [13] 3/-1/-1->2->1 [14] 3/-1/-1->2->1 [15] 3/-1/-1->2->1 [16] 1/-1/-1->2->0 [17] 1/-1/-1->2->0 [18] 1/-1/-1->2->0 [19] 1/-1/-1->2->0 [20] -1/-1/-1->2->3 [21] -1/-1/-1->2->3 [22] -1/-1/-1->2->3 [23] -1/-1/-1->2->3
+nid002393:213888:213888 [0] NCCL INFO P2P Chunksize set to 524288
+nid002393:213888:213888 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid002393:213888:213888 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid002393:213888:214754 [0] NCCL INFO [Proxy Service] Device 0 CPU core 100
+nid002393:213888:214756 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 110
+nid002393:213888:213888 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid002393:213888:213888 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid002393:213888:213888 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid002393:213888:213888 [0] NCCL INFO ncclCommInitRankConfig comm 0x10e69e80 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId 41000 commId 0xbd1acb977dfd3dee - Init COMPLETE
+nid002393:213888:213888 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 2 nranks 4 total 0.25 (kernels 0.14, alloc 0.05, bootstrap 0.00, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.02, rest 0.01)
+nid002393:213888:213888 [0] NCCL INFO Channel 00/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 02/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 06/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 08/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 12/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid002393:213890:213890 [0] NCCL INFO cudaDriverVersion 13000
+nid002393:213890:213890 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213890:213890 [0] NCCL INFO Bootstrap: Using hsn0:10.249.14.147<0>
+nid002393:213890:213890 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid002393:213890:213890 [0] NCCL INFO Comm config Blocking set to 1
+nid002393:213890:213890 [0] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid002393:213890:213890 [0] NCCL INFO Failed to open libibverbs.so[.1]
+nid002393:213890:213890 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+nid002393:213890:213890 [0] NCCL INFO Failed to initialize NET plugin IB
+nid002393:213890:213890 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid002393:213890:213890 [0] NCCL INFO NET/Socket : Using [0]hsn0:10.249.14.147<0> [1]hsn0:chn:128.55.69.94<0> [2]hsn1:10.249.14.148<0> [3]hsn2:10.249.36.54<0> [4]hsn3:10.249.34.54<0>
+nid002393:213890:213890 [0] NCCL INFO Initialized NET plugin Socket
+nid002393:213890:213890 [0] NCCL INFO Assigned NET plugin Socket to comm
+nid002393:213890:213890 [0] NCCL INFO Using network Socket
+nid002393:213890:213890 [0] NCCL INFO ncclCommInitRankConfig comm 0x10e69100 rank 3 nranks 4 cudaDev 0 nvmlDev 0 busId 3000 commId 0xbd1acb977dfd3dee - Init START
+nid002393:213890:213890 [0] NCCL INFO RAS client listening socket at ::1<28028>
+nid002393:213890:213890 [0] NCCL INFO Bootstrap timings total 0.021900 (create 0.000044, send 0.000154, recv 0.003968, ring 0.000092, delay 0.000003)
+nid002393:213890:213890 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 48-63,112-127. (GPU affinity = 48-63,112-127 ; CPU affinity = 48-63,112-127).
+nid002393:213890:213890 [0] NCCL INFO NVLS multicast support is not available on dev 0 (NVLS_NCHANNELS 0)
+nid002393:213890:213890 [0] NCCL INFO comm 0x10e69100 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+nid002393:213890:213890 [0] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] -1/-1/-1->3->2 [4] -1/-1/-1->3->1 [5] -1/-1/-1->3->1 [6] -1/-1/-1->3->1 [7] -1/-1/-1->3->1 [8] 2/-1/-1->3->0 [9] 2/-1/-1->3->0 [10] 2/-1/-1->3->0 [11] 2/-1/-1->3->0 [12] -1/-1/-1->3->2 [13] -1/-1/-1->3->2 [14] -1/-1/-1->3->2 [15] -1/-1/-1->3->2 [16] -1/-1/-1->3->1 [17] -1/-1/-1->3->1 [18] -1/-1/-1->3->1 [19] -1/-1/-1->3->1 [20] 2/-1/-1->3->0 [21] 2/-1/-1->3->0 [22] 2/-1/-1->3->0 [23] 2/-1/-1->3->0
+nid002393:213890:213890 [0] NCCL INFO P2P Chunksize set to 524288
+nid002393:213890:213890 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid002393:213890:213890 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid002393:213890:214757 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 61
+nid002393:213890:214755 [0] NCCL INFO [Proxy Service] Device 0 CPU core 119
+nid002393:213890:213890 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid002393:213890:213890 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid002393:213890:213890 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid002393:213890:213890 [0] NCCL INFO ncclCommInitRankConfig comm 0x10e69100 rank 3 nranks 4 cudaDev 0 nvmlDev 0 busId 3000 commId 0xbd1acb977dfd3dee - Init COMPLETE
+nid002393:213890:213890 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 3 nranks 4 total 0.25 (kernels 0.14, alloc 0.03, bootstrap 0.02, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.02, rest 0.02)
+nid002393:213890:213890 [0] NCCL INFO Channel 00/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 03/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 06/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 09/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 12/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 16/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 18/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 22/0 : 1[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 01/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 03/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 07/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 09/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 13/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 15/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 19/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 21/0 : 1[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 05/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 08/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 11/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 14/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 17/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 20/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213886:213886 [0] NCCL INFO Channel 23/0 : 1[0] -> 0[0] via P2P/CUMEM/read
+
+[2026-04-01 15:06:52] nid002393:213886:213886 [0] transport/p2p.cc:275 NCCL WARN Cuda failure 101 'invalid device ordinal'
+nid002393:213886:213886 [0] NCCL INFO transport/p2p.cc:353 -> 1
+nid002393:213886:213886 [0] NCCL INFO transport/p2p.cc:490 -> 1
+nid002393:213886:213886 [0] NCCL INFO transport.cc:212 -> 1
+nid002393:213886:213886 [0] NCCL INFO transport/generic.cc:25 -> 1
+nid002393:213886:213886 [0] NCCL INFO group.cc:149 -> 1
+nid002393:213886:213886 [0] NCCL INFO group.cc:209 -> 1
+nid002393:213886:213886 [0] NCCL INFO group.cc:76 -> 1 [Async thread]
+nid002393:213886:213886 [0] NCCL INFO group.cc:587 -> 1
+nid002393:213886:213886 [0] NCCL INFO group.cc:743 -> 1
+nid002393:213886:213886 [0] NCCL INFO enqueue.cc:2655 -> 1
+nid002393:213888:213888 [0] NCCL INFO Channel 14/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 18/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 20/0 : 2[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 01/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 04/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 07/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 10/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 13/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 16/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 19/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 22/0 : 2[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 03/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 05/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 09/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 11/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 15/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 17/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 21/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213888:213888 [0] NCCL INFO Channel 23/0 : 2[0] -> 1[0] via P2P/CUMEM/read
+
+[2026-04-01 15:06:52] nid002393:213888:213888 [0] transport/p2p.cc:275 NCCL WARN Cuda failure 101 'invalid device ordinal'
+nid002393:213888:213888 [0] NCCL INFO transport/p2p.cc:353 -> 1
+nid002393:213888:213888 [0] NCCL INFO transport/p2p.cc:490 -> 1
+nid002393:213888:213888 [0] NCCL INFO transport.cc:212 -> 1
+nid002393:213888:213888 [0] NCCL INFO transport/generic.cc:25 -> 1
+nid002393:213888:213888 [0] NCCL INFO group.cc:149 -> 1
+nid002393:213888:213888 [0] NCCL INFO group.cc:209 -> 1
+nid002393:213888:213888 [0] NCCL INFO group.cc:76 -> 1 [Async thread]
+nid002393:213888:213888 [0] NCCL INFO group.cc:587 -> 1
+nid002393:213888:213888 [0] NCCL INFO group.cc:743 -> 1
+nid002393:213888:213888 [0] NCCL INFO enqueue.cc:2655 -> 1
+nid002World Size: 4
+GPUs per task: 1
+393:213885:213885 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid002393:213885:213885 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid002393:213885:214752 [0] NCCL INFO [Proxy Service] Device 0 CPU core 6
+nid002393:213885:214753 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 0
+nid002393:213885:213885 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid002393:213885:213885 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid002393:213885:213885 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid002393:213885:213885 [0] NCCL INFO CC Off, workFifoBytes 1048576
+nid002393:213885:213885 [0] NCCL INFO ncclCommInitRankConfig comm 0xc4d5100 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId c1000 commId 0xbd1acb977dfd3dee - Init COMPLETE
+nid002393:213885:213885 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 4 total 0.25 (kernels 0.14, alloc 0.04, bootstrap 0.02, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.02, rest 0.01)
+nid002393:213885:213885 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 12/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 13/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 18/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 19/0 : 0[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 14/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 15/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 20/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 21/0 : 0[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 04/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 05/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 10/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 11/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 16/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 17/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 22/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+nid002393:213885:213885 [0] NCCL INFO Channel 23/0 : 0[0] -> 3[0] via P2P/CUMEM/read
+
+[2026-04-01 15:06:52] nid002393:213885:213885 [0] transport/p2p.cc:275 NCCL WARN Cuda failure 101 'invalid device ordinal'
+nid002393:213885:213885 [0] NCCL INFO transport/p2p.cc:353 -> 1
+nid002393:213885:213885 [0] NCCL INFO transport/p2p.cc:490 -> 1
+nid002393:213885:213885 [0] NCCL INFO transport.cc:212 -> 1
+nid002393:213885:213885 [0] NCCL INFO transport/generic.cc:25 -> 1
+nid002393:213885:213885 [0] NCCL INFO group.cc:149 -> 1
+nid002393:213885:213885 [0] NCCL INFO group.cc:209 -> 1
+nid002393:213885:213885 [0] NCCL INFO group.cc:76 -> 1 [Async thread]
+nid002393:213885:213885 [0] NCCL INFO group.cc:587 -> 1
+nid002393:213885:213885 [0] NCCL INFO group.cc:743 -> 1
+nid002393:213885:213885 [0] NCCL INFO enqueue.cc:2655 -> 1
+nid002393:213890:213890 [0] NCCL INFO Channel 15/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 18/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 21/0 : 3[0] -> 0[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 02/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 04/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 08/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 10/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 14/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 16/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 20/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 22/0 : 3[0] -> 1[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 01/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 05/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 07/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 11/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 13/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 17/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 19/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+nid002393:213890:213890 [0] NCCL INFO Channel 23/0 : 3[0] -> 2[0] via P2P/CUMEM/read
+
+[2026-04-01 15:06:52] nid002393:213890:213890 [0] transport/p2p.cc:275 NCCL WARN Cuda failure 101 'invalid device ordinal'
+nid002393:213890:213890 [0] NCCL INFO transport/p2p.cc:353 -> 1
+nid002393:213890:213890 [0] NCCL INFO transport/p2p.cc:490 -> 1
+nid002393:213890:213890 [0] NCCL INFO transport.cc:212 -> 1
+nid002393:213890:213890 [0] NCCL INFO transport/generic.cc:25 -> 1
+nid002393:213890:213890 [0] NCCL INFO group.cc:149 -> 1
+nid002393:213890:213890 [0] NCCL INFO group.cc:209 -> 1
+nid002393:213890:213890 [0] NCCL INFO group.cc:76 -> 1 [Async thread]
+nid002393:213890:213890 [0] NCCL INFO group.cc:587 -> 1
+nid002393:213890:213890 [0] NCCL INFO group.cc:743 -> 1
+nid002393:213890:213890 [0] NCCL INFO enqueue.cc:2655 -> 1
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 124, in <module>
+[rank1]:     main(default_cfg)
+[rank1]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/hydra/main.py", line 83, in decorated_main
+[rank1]:     return task_function(cfg_passthrough)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 54, in main
+[rank1]:     net = DDP(net, device_ids=[0], find_unused_parameters=True)
+[rank1]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 881, in __init__
+[rank1]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank1]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/distributed/utils.py", line 286, in _verify_param_shape_across_processes
+[rank1]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: torch.distributed.DistBackendError: NCCL error in: /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3780, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.28.9
+[rank1]: ncclUnhandledCudaError: Call to CUDA function failed.
+[rank1]: Last error:
+[rank1]: Cuda failure 101 'invalid device ordinal'
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 124, in <module>
+[rank2]:     main(default_cfg)
+[rank2]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/hydra/main.py", line 83, in decorated_main
+[rank2]:     return task_function(cfg_passthrough)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 54, in main
+[rank2]:     net = DDP(net, device_ids=[0], find_unused_parameters=True)
+[rank2]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 881, in __init__
+[rank2]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank2]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/distributed/utils.py", line 286, in _verify_param_shape_across_processes
+[rank2]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: torch.distributed.DistBackendError: NCCL error in: /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3780, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.28.9
+[rank2]: ncclUnhandledCudaError: Call to CUDA function failed.
+[rank2]: Last error:
+[rank2]: Cuda failure 101 'invalid device ordinal'
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 124, in <module>
+[rank3]:     main(default_cfg)
+[rank3]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/hydra/main.py", line 83, in decorated_main
+[rank3]:     return task_function(cfg_passthrough)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 54, in main
+[rank3]:     net = DDP(net, device_ids=[0], find_unused_parameters=True)
+[rank3]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 881, in __init__
+[rank3]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank3]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/distributed/utils.py", line 286, in _verify_param_shape_across_processes
+[rank3]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: torch.distributed.DistBackendError: NCCL error in: /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3780, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.28.9
+[rank3]: ncclUnhandledCudaError: Call to CUDA function failed.
+[rank3]: Last error:
+[rank3]: Cuda failure 101 'invalid device ordinal'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 124, in <module>
+[rank0]:     main(default_cfg)
+[rank0]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/hydra/main.py", line 83, in decorated_main
+[rank0]:     return task_function(cfg_passthrough)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/main.py", line 54, in main
+[rank0]:     net = DDP(net, device_ids=[0], find_unused_parameters=True)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 881, in __init__
+[rank0]:     _verify_param_shape_across_processes(self.process_group, parameters)
+[rank0]:   File "/pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/distributed/utils.py", line 286, in _verify_param_shape_across_processes
+[rank0]:     return dist._verify_params_across_processes(process_group, tensors, logger)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.distributed.DistBackendError: NCCL error in: /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3780, unhandled cuda error (run with NCCL_DEBUG=INFO for details), NCCL version 2.28.9
+[rank0]: ncclUnhandledCudaError: Call to CUDA function failed.
+[rank0]: Last error:
+[rank0]: Cuda failure 101 'invalid device ordinal'
+[rank2]:[W401 15:06:52.317286572 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank1]:[W401 15:06:52.327291647 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank0]:[W401 15:06:52.348322880 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank3]:[W401 15:06:52.348680073 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+nid002393:213890:214763 [0] NCCL INFO comm 0x10e69100 rank 3 nRanks 4 cudaDev 0 busId 3000 - Abort START
+nid002393:213890:214763 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213890:214763 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213890:214763 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213890:214763 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213890:214763 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213890:214763 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213890:214755 [0] NCCL INFO misc/socket.cc:943 -> 3
+[rank3]:[W401 15:06:53.738629708 TCPStore.cpp:125] [c10d] recvValue failed on SocketImpl(fd=48, addr=[nid002393-hsn0]:57538, remote=[nid002393-hsn0]:29500): Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+Exception raised from recvBytes at /pytorch/torch/csrc/distributed/c10d/Utils.hpp:682 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x9d (0x7fd89257305d in /pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x6a914bd (0x7fd7fbcb24bd in /pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: c10d::TCPStore::check(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) + 0x273 (0x7fd7fbcb0413 in /pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::ProcessGroupNCCL::HeartbeatMonitor::runLoop() + 0x4a5 (0x7fd7de49c8c5 in /pscratch/sd/e/elavarpa/lejepa_tomography/env/lib/python3.12/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xecdb4 (0x7fd86286edb4 in /lib/x86_64-linux-gnu/libstdc++.so.6)
+frame #5: <unknown function> + 0x9caa4 (0x7fd893658aa4 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #6: <unknown function> + 0x129c3c (0x7fd8936e5c3c in /lib/x86_64-linux-gnu/libc.so.6)
+
+[rank3]:[W401 15:06:53.741304351 ProcessGroupNCCL.cpp:1826] [PG ID 0 PG GUID 0(default_pg) Rank 3] Failed to check the "should dump" flag on TCPStore, (maybe TCPStore server has shut down too early), with error: Failed to recv, got 0 bytes. Connection was likely closed. Did the remote server shutdown or crash?
+nid002393:213885:214762 [0] NCCL INFO comm 0xc4d5100 rank 0 nRanks 4 cudaDev 0 busId c1000 - Abort START
+nid002393:213885:214762 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213885:214762 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213885:214762 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213885:214752 [0] NCCL INFO misc/socket.cc:943 -> 3
+nid002393:213885:214762 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213885:214762 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213885:214762 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213885:214752 [0] NCCL INFO misc/socket.cc:943 -> 3
+nid002393:213885:214762 [0] NCCL INFO comm 0xc4d5100 rank 0 nranks 4 cudaDev 0 busId c1000 - Abort COMPLETE
+nid002393:213888:214760 [0] NCCL INFO comm 0x10e69e80 rank 2 nRanks 4 cudaDev 0 busId 41000 - Abort START
+nid002393:213888:214760 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213888:214760 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213888:214760 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213888:214754 [0] NCCL INFO misc/socket.cc:943 -> 3
+nid002393:213888:214760 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213888:214760 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213888:214760 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213888:214754 [0] NCCL INFO misc/socket.cc:943 -> 3
+nid002393:213888:214760 [0] NCCL INFO comm 0x10e69e80 rank 2 nranks 4 cudaDev 0 busId 41000 - Abort COMPLETE
+nid002393:213885:213885 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+nid002393:213888:213888 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+nid002393:213886:214761 [0] NCCL INFO comm 0x10e49e40 rank 1 nRanks 4 cudaDev 0 busId 82000 - Abort START
+nid002393:213886:214761 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213886:214761 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213886:214761 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213886:214758 [0] NCCL INFO misc/socket.cc:943 -> 3
+nid002393:213886:214761 [0] NCCL INFO misc/socket.cc:64 -> 3
+nid002393:213886:214761 [0] NCCL INFO misc/socket.cc:81 -> 3
+nid002393:213886:214761 [0] NCCL INFO misc/socket.cc:868 -> 3
+nid002393:213886:214758 [0] NCCL INFO misc/socket.cc:943 -> 3
+nid002393:213886:214761 [0] NCCL INFO comm 0x10e49e40 rank 1 nranks 4 cudaDev 0 busId 82000 - Abort COMPLETE
+nid002393:213886:213886 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+nid002393:213890:214763 [0] NCCL INFO comm 0x10e69100 rank 3 nranks 4 cudaDev 0 busId 3000 - Abort COMPLETE
+nid002393:213890:213890 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault
+srun: error: nid002393: task 1: Exited with exit code 1
+srun: Terminating StepId=50840226.0
+[2026-04-01T22:06:54.372] error: *** STEP 50840226.0 ON nid002393 CANCELLED AT 2026-04-01T22:06:54 DUE TO TASK FAILURE ***
+srun: error: nid002393: tasks 0,3: Exited with exit code 1
+srun: error: nid002393: task 2: Exited with exit code 1

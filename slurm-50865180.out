@@ -1,0 +1,267 @@
+World Size: 4
+GPUs per task: 4
+nid008640:904285:904285 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid008640:904285:904285 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904285:904285 [0] NCCL INFO Bootstrap: Using hsn0:10.249.40.198<0>
+nid008640:904285:904285 [0] NCCL INFO cudaDriverVersion 13000
+nid008640:904285:904285 [0] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid008640:904287:904287 [2] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid008640:904287:904287 [2] NCCL INFO cudaDriverVersion 13000
+nid008640:904287:904287 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904287:904287 [2] NCCL INFO Bootstrap: Using hsn0:10.249.40.198<0>
+nid008640:904287:904287 [2] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid008640:904285:904285 [0] NCCL INFO Comm config Blocking set to 1
+nid008640:904286:904286 [1] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid008640:904286:904286 [1] NCCL INFO cudaDriverVersion 13000
+nid008640:904288:904288 [3] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+nid008640:904286:904286 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904288:904288 [3] NCCL INFO cudaDriverVersion 13000
+nid008640:904286:904286 [1] NCCL INFO Bootstrap: Using hsn0:10.249.40.198<0>
+nid008640:904286:904286 [1] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid008640:904287:904287 [2] NCCL INFO Comm config Blocking set to 1
+nid008640:904288:904288 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904288:904288 [3] NCCL INFO Bootstrap: Using hsn0:10.249.40.198<0>
+nid008640:904288:904288 [3] NCCL INFO NCCL version 2.28.9+cuda13.0
+nid008640:904286:904286 [1] NCCL INFO Comm config Blocking set to 1
+nid008640:904288:904288 [3] NCCL INFO Comm config Blocking set to 1
+nid008640:904285:904285 [0] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid008640:904286:904286 [1] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid008640:904288:904288 [3] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid008640:904287:904287 [2] NCCL INFO NET/Plugin: libnccl-net.so: /lib/x86_64-linux-gnu/libnl-route-3.so.200: undefined symbol: nla_nest_end_keep_empty
+nid008640:904288:904288 [3] NCCL INFO Failed to open libibverbs.so[.1]
+nid008640:904288:904288 [3] NCCL INFO transport/net_ib.cc:852 -> 3
+nid008640:904288:904288 [3] NCCL INFO Failed to initialize NET plugin IB
+nid008640:904286:904286 [1] NCCL INFO Failed to open libibverbs.so[.1]
+nid008640:904288:904288 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904286:904286 [1] NCCL INFO transport/net_ib.cc:852 -> 3
+nid008640:904286:904286 [1] NCCL INFO Failed to initialize NET plugin IB
+nid008640:904286:904286 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904285:904285 [0] NCCL INFO Failed to open libibverbs.so[.1]
+nid008640:904285:904285 [0] NCCL INFO transport/net_ib.cc:852 -> 3
+nid008640:904285:904285 [0] NCCL INFO Failed to initialize NET plugin IB
+nid008640:904285:904285 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904287:904287 [2] NCCL INFO Failed to open libibverbs.so[.1]
+nid008640:904287:904287 [2] NCCL INFO transport/net_ib.cc:852 -> 3
+nid008640:904287:904287 [2] NCCL INFO Failed to initialize NET plugin IB
+nid008640:904287:904287 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to hsn
+nid008640:904286:904286 [1] NCCL INFO NET/Socket : Using [0]hsn0:10.249.40.198<0> [1]hsn0:chn:128.55.83.93<0> [2]hsn1:10.249.40.182<0> [3]hsn2:10.249.40.181<0> [4]hsn3:10.249.40.197<0>
+nid008640:904286:904286 [1] NCCL INFO Initialized NET plugin Socket
+nid008640:904288:904288 [3] NCCL INFO NET/Socket : Using [0]hsn0:10.249.40.198<0> [1]hsn0:chn:128.55.83.93<0> [2]hsn1:10.249.40.182<0> [3]hsn2:10.249.40.181<0> [4]hsn3:10.249.40.197<0>
+nid008640:904288:904288 [3] NCCL INFO Initialized NET plugin Socket
+nid008640:904285:904285 [0] NCCL INFO NET/Socket : Using [0]hsn0:10.249.40.198<0> [1]hsn0:chn:128.55.83.93<0> [2]hsn1:10.249.40.182<0> [3]hsn2:10.249.40.181<0> [4]hsn3:10.249.40.197<0>
+nid008640:904285:904285 [0] NCCL INFO Initialized NET plugin Socket
+nid008640:904287:904287 [2] NCCL INFO NET/Socket : Using [0]hsn0:10.249.40.198<0> [1]hsn0:chn:128.55.83.93<0> [2]hsn1:10.249.40.182<0> [3]hsn2:10.249.40.181<0> [4]hsn3:10.249.40.197<0>
+nid008640:904288:904288 [3] NCCL INFO Assigned NET plugin Socket to comm
+nid008640:904288:904288 [3] NCCL INFO Using network Socket
+nid008640:904286:904286 [1] NCCL INFO Assigned NET plugin Socket to comm
+nid008640:904287:904287 [2] NCCL INFO Initialized NET plugin Socket
+nid008640:904286:904286 [1] NCCL INFO Using network Socket
+nid008640:904285:904285 [0] NCCL INFO Assigned NET plugin Socket to comm
+nid008640:904285:904285 [0] NCCL INFO Using network Socket
+nid008640:904287:904287 [2] NCCL INFO Assigned NET plugin Socket to comm
+nid008640:904287:904287 [2] NCCL INFO Using network Socket
+nid008640:904286:904286 [1] NCCL INFO ncclCommInitRankConfig comm 0x10e86100 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 41000 commId 0xb3047bbdf6a23e66 - Init START
+nid008640:904287:904287 [2] NCCL INFO ncclCommInitRankConfig comm 0x10e85a40 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 82000 commId 0xb3047bbdf6a23e66 - Init START
+nid008640:904285:904285 [0] NCCL INFO ncclCommInitRankConfig comm 0xc4ca680 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 3000 commId 0xb3047bbdf6a23e66 - Init START
+nid008640:904288:904288 [3] NCCL INFO ncclCommInitRankConfig comm 0x10ea5a40 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0xb3047bbdf6a23e66 - Init START
+nid008640:904286:904286 [1] NCCL INFO RAS client listening socket at ::1<28028>
+nid008640:904287:904287 [2] NCCL INFO RAS client listening socket at ::1<28028>
+nid008640:904288:904288 [3] NCCL INFO RAS client listening socket at ::1<28028>
+nid008640:904285:904285 [0] NCCL INFO RAS client listening socket at ::1<28028>
+nid008640:904286:904286 [1] NCCL INFO Bootstrap timings total 0.001396 (create 0.000045, send 0.000152, recv 0.000264, ring 0.000354, delay 0.000004)
+nid008640:904287:904287 [2] NCCL INFO Bootstrap timings total 0.001367 (create 0.000045, send 0.000120, recv 0.000573, ring 0.000130, delay 0.000003)
+nid008640:904288:904288 [3] NCCL INFO Bootstrap timings total 0.001302 (create 0.000035, send 0.000105, recv 0.000602, ring 0.000077, delay 0.000003)
+nid008640:904285:904285 [0] NCCL INFO Bootstrap timings total 0.001373 (create 0.000041, send 0.000119, recv 0.000436, ring 0.000161, delay 0.000003)
+nid008640:904287:904287 [2] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 2 is 16-31,80-95. (GPU affinity = 16-31,80-95 ; CPU affinity = 0-127).
+nid008640:904287:904287 [2] NCCL INFO NVLS multicast support is not available on dev 2 (NVLS_NCHANNELS 0)
+nid008640:904286:904286 [1] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 1 is 32-47,96-111. (GPU affinity = 32-47,96-111 ; CPU affinity = 0-127).
+nid008640:904286:904286 [1] NCCL INFO NVLS multicast support is not available on dev 1 (NVLS_NCHANNELS 0)
+nid008640:904285:904285 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 48-63,112-127. (GPU affinity = 48-63,112-127 ; CPU affinity = 0-127).
+nid008640:904285:904285 [0] NCCL INFO NVLS multicast support is not available on dev 0 (NVLS_NCHANNELS 0)
+nid008640:904288:904288 [3] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 3 is 0-15,64-79. (GPU affinity = 0-15,64-79 ; CPU affinity = 0-127).
+nid008640:904288:904288 [3] NCCL INFO NVLS multicast support is not available on dev 3 (NVLS_NCHANNELS 0)
+nid008640:904287:904287 [2] NCCL INFO comm 0x10e85a40 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+nid008640:904286:904286 [1] NCCL INFO comm 0x10e86100 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+nid008640:904285:904285 [0] NCCL INFO comm 0xc4ca680 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+nid008640:904288:904288 [3] NCCL INFO comm 0x10ea5a40 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+nid008640:904285:904285 [0] NCCL INFO Channel 00/24 : 0 3 2 1
+nid008640:904287:904287 [2] NCCL INFO Trees [0] 1/-1/-1->2->3 [1] 1/-1/-1->2->3 [2] 1/-1/-1->2->3 [3] 1/-1/-1->2->3 [4] 3/-1/-1->2->0 [5] 3/-1/-1->2->0 [6] 3/-1/-1->2->0 [7] 3/-1/-1->2->0 [8] -1/-1/-1->2->1 [9] -1/-1/-1->2->1 [10] -1/-1/-1->2->1 [11] -1/-1/-1->2->1 [12] 1/-1/-1->2->3 [13] 1/-1/-1->2->3 [14] 1/-1/-1->2->3 [15] 1/-1/-1->2->3 [16] 3/-1/-1->2->0 [17] 3/-1/-1->2->0 [18] 3/-1/-1->2->0 [19] 3/-1/-1->2->0 [20] -1/-1/-1->2->1 [21] -1/-1/-1->2->1 [22] -1/-1/-1->2->1 [23] -1/-1/-1->2->1
+nid008640:904288:904288 [3] NCCL INFO Trees [0] 2/-1/-1->3->0 [1] 2/-1/-1->3->0 [2] 2/-1/-1->3->0 [3] 2/-1/-1->3->0 [4] 1/-1/-1->3->2 [5] 1/-1/-1->3->2 [6] 1/-1/-1->3->2 [7] 1/-1/-1->3->2 [8] 0/-1/-1->3->-1 [9] 0/-1/-1->3->-1 [10] 0/-1/-1->3->-1 [11] 0/-1/-1->3->-1 [12] 2/-1/-1->3->0 [13] 2/-1/-1->3->0 [14] 2/-1/-1->3->0 [15] 2/-1/-1->3->0 [16] 1/-1/-1->3->2 [17] 1/-1/-1->3->2 [18] 1/-1/-1->3->2 [19] 1/-1/-1->3->2 [20] 0/-1/-1->3->-1 [21] 0/-1/-1->3->-1 [22] 0/-1/-1->3->-1 [23] 0/-1/-1->3->-1
+nid008640:904285:904285 [0] NCCL INFO Channel 01/24 : 0 3 1 2
+nid008640:904287:904287 [2] NCCL INFO P2P Chunksize set to 524288
+nid008640:904285:904285 [0] NCCL INFO Channel 02/24 : 0 2 1 3
+nid008640:904288:904288 [3] NCCL INFO P2P Chunksize set to 524288
+nid008640:904285:904285 [0] NCCL INFO Channel 03/24 : 0 2 3 1
+nid008640:904285:904285 [0] NCCL INFO Channel 04/24 : 0 1 3 2
+nid008640:904285:904285 [0] NCCL INFO Channel 05/24 : 0 1 2 3
+nid008640:904285:904285 [0] NCCL INFO Channel 06/24 : 0 3 2 1
+nid008640:904285:904285 [0] NCCL INFO Channel 07/24 : 0 3 1 2
+nid008640:904285:904285 [0] NCCL INFO Channel 08/24 : 0 2 1 3
+nid008640:904286:904286 [1] NCCL INFO Trees [0] -1/-1/-1->1->2 [1] -1/-1/-1->1->2 [2] -1/-1/-1->1->2 [3] -1/-1/-1->1->2 [4] -1/-1/-1->1->3 [5] -1/-1/-1->1->3 [6] -1/-1/-1->1->3 [7] -1/-1/-1->1->3 [8] 2/-1/-1->1->0 [9] 2/-1/-1->1->0 [10] 2/-1/-1->1->0 [11] 2/-1/-1->1->0 [12] -1/-1/-1->1->2 [13] -1/-1/-1->1->2 [14] -1/-1/-1->1->2 [15] -1/-1/-1->1->2 [16] -1/-1/-1->1->3 [17] -1/-1/-1->1->3 [18] -1/-1/-1->1->3 [19] -1/-1/-1->1->3 [20] 2/-1/-1->1->0 [21] 2/-1/-1->1->0 [22] 2/-1/-1->1->0 [23] 2/-1/-1->1->0
+nid008640:904285:904285 [0] NCCL INFO Channel 09/24 : 0 2 3 1
+nid008640:904285:904285 [0] NCCL INFO Channel 10/24 : 0 1 3 2
+nid008640:904286:904286 [1] NCCL INFO P2P Chunksize set to 524288
+nid008640:904285:904285 [0] NCCL INFO Channel 11/24 : 0 1 2 3
+nid008640:904285:904285 [0] NCCL INFO Channel 12/24 : 0 3 2 1
+nid008640:904285:904285 [0] NCCL INFO Channel 13/24 : 0 3 1 2
+nid008640:904285:904285 [0] NCCL INFO Channel 14/24 : 0 2 1 3
+nid008640:904285:904285 [0] NCCL INFO Channel 15/24 : 0 2 3 1
+nid008640:904285:904285 [0] NCCL INFO Channel 16/24 : 0 1 3 2
+nid008640:904285:904285 [0] NCCL INFO Channel 17/24 : 0 1 2 3
+nid008640:904285:904285 [0] NCCL INFO Channel 18/24 : 0 3 2 1
+nid008640:904285:904285 [0] NCCL INFO Channel 19/24 : 0 3 1 2
+nid008640:904285:904285 [0] NCCL INFO Channel 20/24 : 0 2 1 3
+nid008640:904285:904285 [0] NCCL INFO Channel 21/24 : 0 2 3 1
+nid008640:904285:904285 [0] NCCL INFO Channel 22/24 : 0 1 3 2
+nid008640:904285:904285 [0] NCCL INFO Channel 23/24 : 0 1 2 3
+nid008640:904285:904285 [0] NCCL INFO Trees [0] 3/-1/-1->0->-1 [1] 3/-1/-1->0->-1 [2] 3/-1/-1->0->-1 [3] 3/-1/-1->0->-1 [4] 2/-1/-1->0->-1 [5] 2/-1/-1->0->-1 [6] 2/-1/-1->0->-1 [7] 2/-1/-1->0->-1 [8] 1/-1/-1->0->3 [9] 1/-1/-1->0->3 [10] 1/-1/-1->0->3 [11] 1/-1/-1->0->3 [12] 3/-1/-1->0->-1 [13] 3/-1/-1->0->-1 [14] 3/-1/-1->0->-1 [15] 3/-1/-1->0->-1 [16] 2/-1/-1->0->-1 [17] 2/-1/-1->0->-1 [18] 2/-1/-1->0->-1 [19] 2/-1/-1->0->-1 [20] 1/-1/-1->0->3 [21] 1/-1/-1->0->3 [22] 1/-1/-1->0->3 [23] 1/-1/-1->0->3
+nid008640:904285:904285 [0] NCCL INFO P2P Chunksize set to 524288
+nid008640:904287:904287 [2] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid008640:904287:904287 [2] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid008640:904288:904288 [3] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid008640:904288:904288 [3] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid008640:904285:904285 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid008640:904285:904285 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid008640:904287:904343 [0] NCCL INFO [Proxy Service] Device 2 CPU core 95
+nid008640:904287:904344 [0] NCCL INFO [Proxy Service UDS] Device 2 CPU core 17
+nid008640:904288:904345 [0] NCCL INFO [Proxy Service] Device 3 CPU core 79
+nid008640:904288:904346 [0] NCCL INFO [Proxy Service UDS] Device 3 CPU core 67
+nid008640:904285:904347 [0] NCCL INFO [Proxy Service] Device 0 CPU core 56
+nid008640:904285:904348 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 63
+nid008640:904286:904286 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+nid008640:904286:904286 [1] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+nid008640:904286:904349 [0] NCCL INFO [Proxy Service] Device 1 CPU core 108
+nid008640:904286:904350 [0] NCCL INFO [Proxy Service UDS] Device 1 CPU core 102
+nid008640:904288:904288 [3] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid008640:904288:904288 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid008640:904288:904288 [3] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid008640:904286:904286 [1] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid008640:904286:904286 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid008640:904286:904286 [1] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid008640:904285:904285 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid008640:904285:904285 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid008640:904285:904285 [0] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid008640:904285:904285 [0] NCCL INFO CC Off, workFifoBytes 1048576
+nid008640:904287:904287 [2] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+nid008640:904287:904287 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+nid008640:904287:904287 [2] NCCL INFO 24 coll channels, 24 collnet channels, 0 nvls channels, 32 p2p channels, 8 p2p channels per peer
+nid008640:904286:904286 [1] NCCL INFO ncclCommInitRankConfig comm 0x10e86100 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 41000 commId 0xb3047bbdf6a23e66 - Init COMPLETE
+nid008640:904288:904288 [3] NCCL INFO ncclCommInitRankConfig comm 0x10ea5a40 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId c1000 commId 0xb3047bbdf6a23e66 - Init COMPLETE
+nid008640:904286:904286 [1] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 4 total 0.24 (kernels 0.14, alloc 0.05, bootstrap 0.00, allgathers 0.00, topo 0.02, graphs 0.00, connections 0.02, rest 0.01)
+nid008640:904285:904285 [0] NCCL INFO ncclCommInitRankConfig comm 0xc4ca680 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 3000 commId 0xb3047bbdf6a23e66 - Init COMPLETE
+nid008640:904288:904288 [3] NCCL INFO Init timings - ncclCommInitRankConfig: rank 3 nranks 4 total 0.24 (kernels 0.15, alloc 0.03, bootstrap 0.00, allgathers 0.00, topo 0.02, graphs 0.00, connections 0.02, rest 0.01)
+nid008640:904285:904285 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 4 total 0.25 (kernels 0.14, alloc 0.04, bootstrap 0.00, allgathers 0.00, topo 0.02, graphs 0.00, connections 0.02, rest 0.01)
+nid008640:904287:904287 [2] NCCL INFO ncclCommInitRankConfig comm 0x10e85a40 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId 82000 commId 0xb3047bbdf6a23e66 - Init COMPLETE
+nid008640:904287:904287 [2] NCCL INFO Init timings - ncclCommInitRankConfig: rank 2 nranks 4 total 0.24 (kernels 0.14, alloc 0.05, bootstrap 0.00, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.03, rest 0.01)
+nid008640:904287:904287 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 02/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 05/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 08/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 09/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 11/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 11/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 14/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 15/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 10/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 05/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 17/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 17/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 11/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 20/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 21/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 23/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 23/0 : 3[3] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 16/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 11/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 17/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 13/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 22/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 17/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 23/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 19/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 23/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 01/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 03/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 01/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 07/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 04/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 09/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 02/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 07/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 13/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 10/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 02/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 03/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 15/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 13/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 19/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 04/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 08/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 16/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 19/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 21/0 : 3[3] -> 1[1] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 09/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 08/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 22/0 : 2[2] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 14/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 10/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 14/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 15/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 16/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 20/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 20/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 21/0 : 0[0] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 22/0 : 1[1] -> 3[3] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 00/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 08/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 01/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 12/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 10/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 14/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 06/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 12/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 18/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 16/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 09/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 07/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904287:904287 [2] NCCL INFO Channel 20/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 18/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 12/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 12/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904288:904288 [3] NCCL INFO Channel 22/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 13/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 15/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 18/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 18/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Channel 19/0 : 0[0] -> 3[3] via P2P/CUMEM/read
+nid008640:904286:904286 [1] NCCL INFO Channel 21/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+nid008640:904285:904285 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+nid008640:904286:904286 [1] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+nid008640:904288:904288 [3] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+nid008640:904287:904287 [2] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+Starting distributed training on 11984 slices...
+Starting distributed training on 11984 slices...Starting distributed training on 11984 slices...Starting distributed training on 11984 slices...
+
+
+Successfully started Batch 0 of Epoch 0
+  0%|          | 0/187 [00:00<?, ?it/s]  1%|          | 1/187 [01:09<3:36:22, 69.80s/it]  2%|▏         | 3/187 [01:27<1:15:18, 24.56s/it]  3%|▎         | 5/187 [01:59<1:01:29, 20.27s/it]  4%|▎         | 7/187 [02:27<52:25, 17.48s/it]    5%|▍         | 9/187 [02:54<47:54, 16.15s/it]  6%|▌         | 11/187 [03:17<42:19, 14.43s/it]  7%|▋         | 13/187 [03:47<42:14, 14.57s/it]  8%|▊         | 15/187 [04:17<42:19, 14.77s/it]  9%|▉         | 17/187 [04:39<38:26, 13.57s/it] 10%|█         | 19/187 [05:11<40:06, 14.32s/it] 11%|█         | 21/187 [05:44<41:41, 15.07s/it] 12%|█▏        | 23/187 [06:14<41:04, 15.03s/it] 13%|█▎        | 25/187 [06:44<40:20, 14.94s/it] 14%|█▍        | 27/187 [07:02<35:16, 13.23s/it] 16%|█▌        | 29/187 [07:30<35:19, 13.41s/it] 16%|█▌        | 30/187 [07:38<32:33, 12.44s/it] 17%|█▋        | 31/187 [08:03<39:02, 15.02s/it] 17%|█▋        | 32/187 [08:05<30:56, 11.98s/it] 18%|█▊        | 33/187 [08:31<39:46, 15.50s/it] 19%|█▊        | 35/187 [09:03<39:57, 15.78s/it] 20%|█▉        | 37/187 [09:30<37:09, 14.87s/it] 21%|██        | 39/187 [10:03<37:50, 15.34s/it] 22%|██▏       | 41/187 [10:27<34:55, 14.35s/it] 23%|██▎       | 43/187 [11:02<36:36, 15.25s/it] 24%|██▍       | 45/187 [11:31<35:37, 15.05s/it] 25%|██▌       | 47/187 [11:55<33:04, 14.18s/it] 26%|██▌       | 49/187 [12:19<31:08, 13.54s/it] 27%|██▋       | 51/187 [12:51<32:12, 14.21s/it] 28%|██▊       | 53/187 [13:20<31:52, 14.27s/it] 29%|██▉       | 55/187 [13:48<31:19, 14.24s/it] 30%|███       | 57/187 [14:17<30:52, 14.25s/it] 32%|███▏      | 59/187 [14:43<29:44, 13.94s/it] 33%|███▎      | 61/187 [15:18<31:39, 15.08s/it] 34%|███▎      | 63/187 [15:43<29:32, 14.29s/it] 35%|███▍      | 65/187 [16:16<30:07, 14.82s/it] 36%|███▌      | 67/187 [16:40<28:02, 14.02s/it] 37%|███▋      | 69/187 [17:06<26:54, 13.68s/it] 38%|███▊      | 71/187 [17:29<25:19, 13.10s/it] 39%|███▉      | 73/187 [18:00<26:08, 13.76s/it] 40%|████      | 75/187 [18:32<26:56, 14.43s/it] 41%|████      | 77/187 [19:03<27:14, 14.86s/it] 42%|████▏     | 79/187 [19:28<25:26, 14.13s/it] 43%|████▎     | 81/187 [19:51<23:22, 13.23s/it] 44%|████▍     | 83/187 [20:17<23:03, 13.30s/it] 45%|████▌     | 85/187 [20:50<24:13, 14.25s/it] 47%|████▋     | 87/187 [21:27<25:43, 15.43s/it] 48%|████▊     | 89/187 [21:48<22:46, 13.94s/it] 48%|████▊     | 90/187 [21:50<19:17, 11.94s/it] 49%|████▊     | 91/187 [22:10<21:33, 13.47s/it] 49%|████▉     | 92/187 [22:18<19:32, 12.34s/it] 50%|████▉     | 93/187 [22:35<21:10, 13.51s/it] 50%|█████     | 94/187 [22:53<22:38, 14.60s/it] 51%|█████     | 95/187 [23:08<22:29, 14.67s/it] 51%|█████▏    | 96/187 [23:20<21:08, 13.94s/it] 52%|█████▏    | 97/187 [23:38<22:29, 14.99s/it] 52%|█████▏    | 98/187 [23:44<18:32, 12.50s/it] 53%|█████▎    | 99/187 [24:17<27:09, 18.51s/it] 54%|█████▍    | 101/187 [24:51<25:25, 17.74s/it] 55%|█████▌    | 103/187 [25:11<20:35, 14.71s/it] 56%|█████▌    | 105/187 [25:43<20:44, 15.18s/it] 57%|█████▋    | 107/187 [26:16<20:55, 15.69s/it] 58%|█████▊    | 109/187 [26:49<20:36, 15.86s/it] 59%|█████▉    | 111/187 [27:16<19:09, 15.13s/it] 60%|██████    | 113/187 [27:42<17:47, 14.43s/it] 61%|██████▏   | 115/187 [28:09<17:05, 14.25s/it] 63%|██████▎   | 117/187 [28:37<16:33, 14.19s/it] 64%|██████▎   | 119/187 [28:59<14:58, 13.22s/it] 65%|██████▍   | 121/187 [29:26<14:38, 13.31s/it] 65%|██████▌   | 122/187 [29:28<12:07, 11.19s/it] 66%|██████▌   | 123/187 [29:56<15:35, 14.62s/it] 67%|██████▋   | 125/187 [30:33<16:36, 16.07s/it] 68%|██████▊   | 127/187 [31:02<15:32, 15.55s/it] 69%|██████▉   | 129/187 [31:32<14:49, 15.34s/it] 70%|███████   | 131/187 [32:01<14:01, 15.02s/it] 71%|███████   | 133/187 [32:28<13:08, 14.60s/it] 72%|███████▏  | 135/187 [32:56<12:28, 14.40s/it] 73%|███████▎  | 137/187 [33:29<12:33, 15.08s/it] 74%|███████▍  | 139/187 [33:58<11:53, 14.87s/it] 75%|███████▌  | 141/187 [34:24<10:59, 14.33s/it] 76%|███████▋  | 143/187 [34:48<10:00, 13.66s/it] 78%|███████▊  | 145/187 [35:13<09:16, 13.24s/it] 78%|███████▊  | 146/187 [35:16<07:49, 11.45s/it] 79%|███████▊  | 147/187 [35:49<10:33, 15.83s/it] 80%|███████▉  | 149/187 [36:13<09:08, 14.45s/it] 81%|████████  | 151/187 [36:46<09:02, 15.08s/it] 82%|████████▏ | 153/187 [37:11<08:03, 14.22s/it] 83%|████████▎ | 155/187 [37:46<08:08, 15.28s/it] 84%|████████▍ | 157/187 [38:13<07:20, 14.68s/it] 85%|████████▌ | 159/187 [38:45<07:02, 15.08s/it] 86%|████████▌ | 161/187 [39:10<06:13, 14.38s/it] 87%|████████▋ | 163/187 [39:42<05:58, 14.92s/it] 88%|████████▊ | 165/187 [40:12<05:27, 14.91s/it] 89%|████████▉ | 167/187 [40:32<04:27, 13.39s/it] 90%|████████▉ | 168/187 [40:39<03:53, 12.31s/it] 90%|█████████ | 169/187 [41:07<04:36, 15.35s/it] 91%|█████████ | 170/187 [41:07<03:23, 11.96s/it] 91%|█████████▏| 171/187 [41:32<04:02, 15.16s/it] 92%|█████████▏| 172/187 [41:41<03:23, 13.58s/it] 93%|█████████▎| 173/187 [42:02<03:37, 15.54s/it] 93%|█████████▎| 174/187 [42:08<02:48, 12.98s/it] 94%|█████████▎| 175/187 [42:35<03:23, 16.98s/it] 94%|█████████▍| 176/187 [42:45<02:42, 14.80s/it] 95%|█████████▍| 177/187 [43:02<02:34, 15.43s/it] 95%|█████████▌| 178/187 [43:13<02:08, 14.31s/it] 96%|█████████▌| 179/187 [43:20<01:36, 12.11s/it] 96%|█████████▋| 180/187 [43:45<01:51, 15.86s/it] 97%|█████████▋| 181/187 [43:47<01:09, 11.65s/it] 97%|█████████▋| 182/187 [44:09<01:13, 14.72s/it] 98%|█████████▊| 183/187 [44:14<00:47, 11.91s/it] 98%|█████████▊| 184/187 [44:35<00:43, 14.53s/it] 99%|█████████▉| 185/187 [44:41<00:24, 12.22s/it] 99%|█████████▉| 186/187 [45:00<00:14, 14.04s/it]100%|██████████| 187/187 [45:07<00:00, 11.90s/it]100%|██████████| 187/187 [45:07<00:00, 14.48s/it]
+Successfully started Batch 0 of Epoch 1
+  0%|          | 0/187 [00:00<?, ?it/s]  1%|          | 1/187 [00:31<1:36:37, 31.17s/it]  2%|▏         | 3/187 [01:01<59:36, 19.44s/it]    3%|▎         | 5/187 [01:36<55:34, 18.32s/it]  4%|▎         | 7/187 [02:03<48:53, 16.30s/it]  5%|▍         | 9/187 [02:27<43:19, 14.60s/it]  6%|▌         | 11/187 [02:52<40:48, 13.91s/it]  7%|▋         | 13/187 [03:27<44:04, 15.20s/it]  8%|▊         | 15/187 [03:59<43:59, 15.34s/it]  9%|▉         | 17/187 [04:26<41:52, 14.78s/it] 10%|█         | 19/187 [04:55<41:24, 14.79s/it] 11%|█         | 21/187 [05:28<42:12, 15.25s/it] 12%|█▏        | 23/187 [05:52<38:52, 14.22s/it] 13%|█▎        | 24/187 [06:01<36:08, 13.31s/it] 13%|█▎        | 25/187 [06:24<41:31, 15.38s/it] 14%|█▍        | 26/187 [06:31<36:04, 13.44s/it] 14%|█▍        | 27/187 [06:58<44:16, 16.60s/it] 15%|█▍        | 28/187 [06:59<33:55, 12.80s/it] 16%|█▌        | 29/187 [07:23<41:09, 15.63s/it] 16%|█▌        | 30/187 [07:26<32:04, 12.26s/it] 17%|█▋        | 31/187 [07:49<39:44, 15.29s/it] 17%|█▋        | 32/187 [07:52<30:10, 11.68s/it] 18%|█▊        | 33/187 [08:21<42:54, 16.72s/it] 18%|█▊        | 34/187 [08:21<30:19, 11.89s/it] 19%|█▊        | 35/187 [08:47<40:30, 15.99s/it] 19%|█▉        | 36/187 [08:51<30:58, 12.31s/it] 20%|█▉        | 37/187 [09:17<41:12, 16.49s/it] 20%|██        | 38/187 [09:28<36:38, 14.76s/it] 21%|██        | 39/187 [09:48<40:53, 16.58s/it] 21%|██▏       | 40/187 [09:57<34:43, 14.17s/it] 22%|██▏       | 41/187 [10:16<38:21, 15.76s/it] 22%|██▏       | 42/187 [10:34<39:22, 16.29s/it] 23%|██▎       | 43/187 [10:50<38:55, 16.22s/it] 24%|██▎       | 44/187 [10:58<32:44, 13.74s/it] 24%|██▍       | 45/187 [11:14<34:14, 14.47s/it] 25%|██▍       | 46/187 [11:25<31:25, 13.37s/it] 25%|██▌       | 47/187 [11:44<35:26, 15.19s/it] 26%|██▌       | 48/187 [12:00<35:44, 15.43s/it] 26%|██▌       | 49/187 [12:12<33:04, 14.38s/it] 27%|██▋       | 50/187 [12:32<36:23, 15.94s/it] 27%|██▋       | 51/187 [12:47<35:18, 15.58s/it] 28%|██▊       | 52/187 [12:56<31:00, 13.78s/it] 28%|██▊       | 53/187 [13:25<40:38, 18.20s/it] 29%|██▉       | 54/187 [13:25<28:35, 12.90s/it] 29%|██▉       | 55/187 [13:55<39:37, 18.01s/it] 30%|██▉       | 56/187 [13:56<28:22, 12.99s/it] 30%|███       | 57/187 [14:22<36:03, 16.65s/it] 32%|███▏      | 59/187 [14:55<35:25, 16.60s/it] 32%|███▏      | 60/187 [14:55<26:31, 12.53s/it] 33%|███▎      | 61/187 [15:21<33:40, 16.03s/it] 33%|███▎      | 62/187 [15:23<25:35, 12.28s/it] 34%|███▎      | 63/187 [15:51<34:25, 16.66s/it] 34%|███▍      | 64/187 [16:00<29:38, 14.46s/it] 35%|███▍      | 65/187 [16:21<33:31, 16.48s/it] 35%|███▌      | 66/187 [16:29<27:57, 13.86s/it] 36%|███▌      | 67/187 [16:49<31:25, 15.72s/it] 36%|███▋      | 68/187 [17:06<31:57, 16.11s/it] 37%|███▋      | 69/187 [17:15<27:27, 13.97s/it] 37%|███▋      | 70/187 [17:43<35:14, 18.07s/it] 39%|███▊      | 72/187 [18:07<29:33, 15.42s/it] 39%|███▉      | 73/187 [18:09<22:45, 11.98s/it] 40%|███▉      | 74/187 [18:35<29:23, 15.60s/it] 41%|████      | 76/187 [19:08<29:30, 15.95s/it] 42%|████▏     | 78/187 [19:34<27:16, 15.01s/it] 43%|████▎     | 80/187 [20:10<28:37, 16.05s/it] 44%|████▍     | 82/187 [20:42<27:53, 15.94s/it] 45%|████▍     | 84/187 [20:58<23:03, 13.43s/it] 46%|████▌     | 86/187 [21:25<22:27, 13.35s/it] 47%|████▋     | 87/187 [21:25<18:17, 10.97s/it] 47%|████▋     | 88/187 [22:00<26:29, 16.06s/it] 48%|████▊     | 90/187 [22:21<22:30, 13.92s/it] 49%|████▊     | 91/187 [22:28<19:50, 12.40s/it] 49%|████▉     | 92/187 [22:47<22:15, 14.06s/it] 50%|████▉     | 93/187 [22:54<19:02, 12.15s/it] 50%|█████     | 94/187 [23:11<20:43, 13.37s/it] 51%|█████     | 95/187 [23:23<20:06, 13.12s/it] 51%|█████▏    | 96/187 [23:41<22:00, 14.51s/it] 52%|█████▏    | 97/187 [23:59<23:11, 15.47s/it] 52%|█████▏    | 98/187 [24:07<19:59, 13.47s/it] 53%|█████▎    | 99/187 [24:34<25:28, 17.37s/it] 53%|█████▎    | 100/187 [24:39<19:42, 13.59s/it] 54%|█████▍    | 101/187 [24:58<21:51, 15.24s/it] 55%|█████▍    | 102/187 [25:04<17:50, 12.59s/it] 55%|█████▌    | 103/187 [25:33<24:17, 17.35s/it] 56%|█████▌    | 105/187 [26:04<22:41, 16.61s/it] 57%|█████▋    | 107/187 [26:30<20:05, 15.07s/it] 58%|█████▊    | 108/187 [26:31<15:54, 12.09s/it] 58%|█████▊    | 109/187 [26:53<18:32, 14.26s/it] 59%|█████▉    | 110/187 [27:05<17:47, 13.86s/it] 59%|█████▉    | 111/187 [27:23<19:03, 15.05s/it] 60%|█████▉    | 112/187 [27:33<16:58, 13.57s/it] 60%|██████    | 113/187 [27:56<19:47, 16.05s/it] 61%|██████    | 114/187 [27:58<14:51, 12.22s/it] 61%|██████▏   | 115/187 [28:24<19:13, 16.02s/it] 62%|██████▏   | 116/187 [28:28<15:05, 12.76s/it] 63%|██████▎   | 117/187 [28:45<16:08, 13.83s/it] 63%|██████▎   | 118/187 [28:49<12:41, 11.03s/it] 64%|██████▎   | 119/187 [29:17<18:12, 16.06s/it] 64%|██████▍   | 120/187 [29:25<15:07, 13.55s/it] 65%|██████▍   | 121/187 [29:54<20:07, 18.30s/it] 66%|██████▌   | 123/187 [30:29<18:57, 17.77s/it] 67%|██████▋   | 125/187 [31:01<17:46, 17.19s/it] 68%|██████▊   | 127/187 [31:28<15:53, 15.89s/it] 69%|██████▉   | 129/187 [31:53<14:12, 14.69s/it] 70%|███████   | 131/187 [32:21<13:27, 14.42s/it] 71%|███████   | 133/187 [32:50<12:59, 14.43s/it] 72%|███████▏  | 135/187 [33:18<12:23, 14.30s/it] 73%|███████▎  | 137/187 [33:46<11:49, 14.19s/it] 74%|███████▍  | 139/187 [34:16<11:36, 14.52s/it] 75%|███████▌  | 141/187 [34:42<10:48, 14.10s/it] 76%|███████▋  | 143/187 [35:17<11:05, 15.12s/it] 78%|███████▊  | 145/187 [35:49<10:46, 15.39s/it] 79%|███████▊  | 147/187 [36:12<09:23, 14.09s/it] 80%|███████▉  | 149/187 [36:32<08:12, 12.97s/it] 80%|████████  | 150/187 [36:37<07:07, 11.55s/it] 81%|████████  | 151/187 [36:57<07:57, 13.27s/it] 81%|████████▏ | 152/187 [37:03<06:42, 11.51s/it] 82%|████████▏ | 153/187 [37:19<07:06, 12.55s/it] 82%|████████▏ | 154/187 [37:30<06:46, 12.32s/it] 83%|████████▎ | 155/187 [37:43<06:42, 12.56s/it] 83%|████████▎ | 156/187 [37:58<06:50, 13.23s/it] 84%|████████▍ | 157/187 [38:16<07:17, 14.59s/it] 84%|████████▍ | 158/187 [38:26<06:20, 13.12s/it] 85%|████████▌ | 159/187 [38:52<07:57, 17.04s/it] 86%|████████▌ | 160/187 [39:02<06:40, 14.83s/it] 86%|████████▌ | 161/187 [39:25<07:29, 17.27s/it] 87%|████████▋ | 162/187 [39:29<05:31, 13.24s/it] 87%|████████▋ | 163/187 [39:54<06:44, 16.87s/it] 88%|████████▊ | 164/187 [39:55<04:38, 12.11s/it] 88%|████████▊ | 165/187 [40:28<06:42, 18.29s/it] 89%|████████▉ | 167/187 [40:55<05:23, 16.19s/it] 90%|█████████ | 169/187 [41:26<04:43, 15.76s/it] 91%|█████████▏| 171/187 [41:49<03:48, 14.31s/it] 92%|█████████▏| 172/187 [41:55<03:07, 12.53s/it] 93%|█████████▎| 173/187 [42:18<03:29, 14.95s/it] 94%|█████████▎| 175/187 [42:47<02:57, 14.82s/it] 95%|█████████▍| 177/187 [43:21<02:34, 15.49s/it] 96%|█████████▌| 179/187 [43:46<01:56, 14.62s/it] 97%|█████████▋| 181/187 [44:16<01:28, 14.70s/it] 98%|█████████▊| 183/187 [44:47<00:59, 14.93s/it] 99%|█████████▉| 185/187 [45:13<00:28, 14.31s/it]100%|██████████| 187/187 [45:33<00:00, 13.03s/it]100%|██████████| 187/187 [45:33<00:00, 14.62s/it]
+Successfully started Batch 0 of Epoch 2
+  0%|          | 0/187 [00:00<?, ?it/s]  1%|          | 1/187 [00:30<1:33:37, 30.20s/it]  2%|▏         | 3/187 [01:00<58:36, 19.11s/it]    3%|▎         | 5/187 [01:31<51:53, 17.11s/it]  4%|▎         | 7/187 [01:58<46:52, 15.63s/it]  5%|▍         | 9/187 [02:29<46:29, 15.67s/it]  6%|▌         | 11/187 [02:53<41:53, 14.28s/it]  6%|▋         | 12/187 [02:54<34:12, 11.73s/it]  7%|▋         | 13/187 [03:11<36:59, 12.76s/it]  7%|▋         | 14/187 [03:15<30:46, 10.68s/it]  8%|▊         | 15/187 [03:35<37:21, 13.03s/it]  9%|▊         | 16/187 [03:46<36:10, 12.69s/it]  9%|▉         | 17/187 [03:56<33:45, 11.91s/it] 10%|▉         | 18/187 [04:23<45:39, 16.21s/it] 11%|█         | 20/187 [04:51<42:14, 15.18s/it] 11%|█         | 21/187 [04:54<34:04, 12.32s/it] 12%|█▏        | 22/187 [05:16<40:19, 14.66s/it] 12%|█▏        | 23/187 [05:29<39:14, 14.35s/it] 13%|█▎        | 24/187 [05:43<38:46, 14.28s/it] 13%|█▎        | 25/187 [05:54<35:46, 13.25s/it] 14%|█▍        | 26/187 [06:11<38:15, 14.26s/it] 14%|█▍        | 27/187 [06:28<40:29, 15.18s/it] 15%|█▍        | 28/187 [06:39<36:55, 13.93s/it] 16%|█▌        | 29/187 [06:48<32:43, 12.42s/it] 16%|█▌        | 30/187 [07:05<35:54, 13.72s/it] 17%|█▋        | 31/187 [07:16<33:21, 12.83s/it] 17%|█▋        | 32/187 [07:26<31:22, 12.15s/it] 18%|█▊        | 33/187 [07:50<39:59, 15.58s/it] 18%|█▊        | 34/187 [08:01<36:24, 14.28s/it] 19%|█▊        | 35/187 [08:25<43:11, 17.05s/it] 19%|█▉        | 36/187 [08:32<35:22, 14.06s/it] 20%|█▉        | 37/187 [08:51<39:28, 15.79s/it] 20%|██        | 38/187 [08:57<31:24, 12.65s/it] 21%|██        | 39/187 [09:25<42:30, 17.23s/it] 22%|██▏       | 41/187 [09:58<41:13, 16.94s/it] 23%|██▎       | 43/187 [10:27<38:19, 15.97s/it] 24%|██▍       | 45/187 [10:55<35:57, 15.19s/it] 25%|██▌       | 47/187 [11:24<34:53, 14.95s/it] 26%|██▌       | 49/187 [11:55<34:58, 15.21s/it] 27%|██▋       | 51/187 [12:19<32:10, 14.20s/it] 28%|██▊       | 53/187 [12:51<32:47, 14.68s/it] 29%|██▉       | 55/187 [13:21<32:31, 14.78s/it] 30%|███       | 57/187 [13:47<30:56, 14.28s/it] 32%|███▏      | 59/187 [14:15<30:14, 14.18s/it] 33%|███▎      | 61/187 [14:50<31:57, 15.21s/it] 34%|███▎      | 63/187 [15:21<31:31, 15.26s/it] 35%|███▍      | 65/187 [15:47<29:48, 14.66s/it] 36%|███▌      | 67/187 [16:18<29:37, 14.81s/it] 37%|███▋      | 69/187 [16:49<29:32, 15.02s/it] 38%|███▊      | 71/187 [17:13<27:19, 14.13s/it] 39%|███▉      | 73/187 [17:43<27:31, 14.49s/it] 40%|████      | 75/187 [18:11<26:46, 14.34s/it] 41%|████      | 77/187 [18:39<25:58, 14.17s/it] 42%|████▏     | 79/187 [19:10<26:23, 14.66s/it] 43%|████▎     | 81/187 [19:42<26:29, 15.00s/it] 44%|████▍     | 83/187 [20:08<24:58, 14.41s/it] 45%|████▌     | 85/187 [20:33<23:36, 13.89s/it] 47%|████▋     | 87/187 [21:04<23:44, 14.25s/it] 48%|████▊     | 89/187 [21:26<21:39, 13.26s/it] 49%|████▊     | 91/187 [21:47<20:06, 12.57s/it] 50%|████▉     | 93/187 [22:18<21:04, 13.45s/it] 51%|█████     | 95/187 [22:47<21:02, 13.72s/it] 52%|█████▏    | 97/187 [23:17<21:04, 14.05s/it] 53%|█████▎    | 99/187 [23:50<21:41, 14.79s/it] 54%|█████▍    | 101/187 [24:25<22:25, 15.64s/it] 55%|█████▌    | 103/187 [24:52<21:03, 15.04s/it] 56%|█████▌    | 105/187 [25:13<18:37, 13.63s/it] 57%|█████▋    | 107/187 [25:49<19:58, 14.99s/it] 58%|█████▊    | 109/187 [26:15<18:43, 14.40s/it] 59%|█████▉    | 111/187 [26:43<18:01, 14.23s/it] 60%|██████    | 113/187 [27:03<16:04, 13.03s/it] 61%|██████▏   | 115/187 [27:42<17:53, 14.91s/it] 63%|██████▎   | 117/187 [28:16<18:10, 15.58s/it] 64%|██████▎   | 119/187 [28:42<16:45, 14.79s/it][2026-04-02T08:05:38.258] error: *** STEP 50865180.0 ON nid008640 CANCELLED AT 2026-04-02T08:05:38 DUE TO TIME LIMIT ***
+[2026-04-02T08:05:38.259] error: *** JOB 50865180 ON nid008640 CANCELLED AT 2026-04-02T08:05:38 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

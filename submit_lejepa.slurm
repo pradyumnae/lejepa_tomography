@@ -3,11 +3,11 @@
 #SBATCH -J lejepa_train
 #SBATCH -C gpu
 #SBATCH -q regular
-#SBATCH -t 02:00:00
+#SBATCH -t 06:00:00
 #SBATCH -N 1
-#SBATCH --ntasks-per-node=4
-#SBATCH -c 32
-#SBATCH --gpus-per-task=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gpus-per-node=4
+#SBATCH --cpus-per-task=128
 #SBATCH --exclusive
 
 module load gpu
@@ -22,10 +22,5 @@ export NCCL_NET_GDR_LEVEL=PHB
 export OMP_NUM_THREADS=4
 
 srun shifter --image=$IMAGE bash -c "
-    export MASTER_ADDR=\$(hostname)
-    export MASTER_PORT=29500
-    export RANK=\$SLURM_PROCID
-    export LOCAL_RANK=0
-    export WORLD_SIZE=\$SLURM_NTASKS
-    python main.py
+    torchrun --nnodes 1 --nproc_per_node 4 main.py
 "
